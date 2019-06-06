@@ -1,25 +1,18 @@
 
-# array - unidimensional ou multidimensional
-#              vetor           matriz
+# 2)
+# x = 0
 #
-# vetor: - Conjunto de dados/valores
-#         - Possuem uma sequencia
-#         - Todos os valores são do mesmo tipo de dado - /string, inteiro, float, boleano/
-# indici é um número vque indica a posição dentro do meu vetor = tamanho - 1
+# v = [0] * 6
+# while( x < 6 ):
+#     v[x] = int(input(" Digite um número:"))
+#     x = x + 1
+# print("Os numeros escolidos foram", v)
 
-idades = [0] * 6
-idades[3] = 18
-idades[5] = 1
+# 3)nome
+x = 0
 
-print(idades)
-print(idades[3])
-
-# nome = [""] * 35
-# salario = [0.0] * 35
-# passou de ano = [false] * 35
-
-cont = 0
-while(cont < len(idades)):
-    idades[cont] = int(input("idade:"))
-    cont = cont + 1
-print(idades[0], idades[1], idades[2], idades[3], idades[4], idades[5])
+v = [0] * 6
+while( x < 6 ):
+    v[x] = input(" Digite um nome:")
+    x = x + 1
+print("Os nomes são:", v)
