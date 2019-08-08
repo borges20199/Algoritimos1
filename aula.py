@@ -1,129 +1,103 @@
-# 3)
+# def pedeMostra():
+#     x = int(input(" Digite um número "))
+#     print('o número digitado foi', x)
+# pedeMostra()
 
-# x = 0
-# v = [""] * 5
-# while(x < len(v)):
-#     v[x] = input(" Digite um nome:")
-#     x = x + 1
+# def exibirMenu():
+#     print("""
+#     ****Menu Principal****         
+#         1. incluir
+#         2. alterar
+#         3. excluir 
+#         4. sair 
+#     """)
+# exibirMenu()
 
-# x = 0
-# while(x < len(v)):
-#         print("Os nomes são:", v[x])
-#         x = x + 1
 
-
-# 4)
-# n = int(input(" Digite a quantia de números : "))
-# v = [0] * n
-
-# x = 0
-# while(x < len(v)):
-#     v[x] = int(input(" Digite um número: "))
-#     x = x + 1
-    
-# x = 0
-# while(x < len(v)):
-#     print(v[x])
-#     x = x + 1
-
-# 5) 
+######lista de exercicos#######
+# ex 1)
 # a)
-# n = int(input(" Digite a quantia de números : "))
-# v = [0] * n
 
-# x = 0
-# while(x < len(v)):
-#     v[x] = int(input(" Digite um número: "))
-#     x = x + 1
+def somar():
+    x = int(input(" Digite o primeiro número: "))
+    y = int(input(" Digite o segundo número: "))
+    soma = (x + y)
+    print(" a soma desses números é: ", soma)
+# somar()
 
-# x = n - 1
-# while(x >= 0 ):
-#     print(v[x])
-#     x = x - 1
+# b)
 
-# B)
-# soma = 0 
-# n=int(input(" Digite a quantia de números : "))
-# v = [0] * n
 
-# x = 0
-# while(x < len(v)):
-#     v[x] = int(input(" Digite um número: "))
-#     soma = v[x] + soma
-#     x = x + 1
-# print(soma)
-    
-# C)
-# soma = 0
-# n=int(input(" Digite a quantia de números : "))
-# v = [0] * n
+def multiplicar():
+    x = int(input(" Digite o primeiro número: "))
+    y = int(input(" Digite o segundo número: "))
+    mlt = (x * y)
+    print(" a Multiplicação desses números é: ", mlt)
+# multiplicar()
 
-# x = 0
-# while(x < len(v)):
-#     v[x] = int(input(" Digite um número: "))
-#     soma = v[x] + soma
-#     media = soma/n
-#     x = x + 1
-# print(media)
 
-# D)
-# n = int(input(" Digite a quantia de números : "))
-# v = [0] * n
+#c)
 
-# x = 0
-# while(x < len(v)):
-#     v[x] = int(input(" Digite um número: "))
-#     x = x + 1
+import math
+def raiz():
+    x = int(input(" Digite um número: "))
+    y = math.sqrt(x)
+    print(y)
+# raiz()
 
-# x = 0
-# while(x < len(v)):
-#     if(x % 2 == 0):
-#         print(v[x])
-#     x = x + 1
+#d)
 
-# e)
-# n = int(input(" Digite a quantia de números : "))
-# inicio = int(input(" Digite o inicio da sequencia : "))
-# final = int(input(" Digite o final da sequencia : "))
 
-# v = [0] * n
-# cont = 0
-# while(cont < len(v)):
-#     v[cont] = int(input(" Digite os números:"))
-#     cont = cont + 1
+def potencia():
+    x = int(input(" Digite um número: "))
+    y = int(input(" Digite um número: "))
+    z = math.pow(x,y)
+    print(Z)
+# potencia()
 
-# cont = inicio
-# while(cont <= final):
-#     print(v[cont])
-#     cont = cont + 1
+#e)
 
-# F)
-n = int(input(" Digite a quantia de números : "))
-inicio = int(input(" Digite o inicio da sequencia : "))
-final = int(input(" Digite o final da sequencia : "))
-soma = 0
-v = [0] * n
-cont = 0
-while(cont < len(v)):
-    v[cont] = int(input(" Digite os números:"))
-    cont = cont + 1
+def tabuada():
+    x = int(input(" Digite um número: "))
+    cont = 1
+    while(cont <= 10 ):
+        multi = cont * x
+        print(cont,"*", x, "=", multi)
+        cont = cont + 1
+# tabuada()
 
-cont = inicio
-while(cont <= final):
-    print(v[cont])
-    soma = soma + v[cont]
-    cont = cont + 1
-print(" A soma dos números desse intervalo é : ",soma)
+#2)
+def menuOperacoes():
+    print("""
+    Menu Principal 
+    1.Soma
+    2.Multiplicação
+    3.Raiz
+    4.Potência
+    5.Tabuada
+    6.Sair
+    """)
 
 
 
 
 
-
-
-
-
-
-
-
+while(True):    
+    menuOperacoes()
+    opcao = int(input("Escolha a opção desejada:"))
+    if(opcao == 1):
+        somar()
+    elif(opcao == 2):
+        multiplicar()
+    elif(opcao == 3):
+        raiz()
+    elif(opcao == 4):
+        potencia()
+    elif(opcao == 5):
+        tabuada()
+    elif(opcao == 6):
+        break
+    else:
+        print(" Opção invalida")
+        
 
