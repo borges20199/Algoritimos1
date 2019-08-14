@@ -22,7 +22,7 @@ def somar():
     x = int(input(" Digite o primeiro número: "))
     y = int(input(" Digite o segundo número: "))
     soma = (x + y)
-    print(" a soma desses números é: ", soma)
+    print(x, "+", y, "=", soma)
 # somar()
 
 # b)
@@ -32,7 +32,7 @@ def multiplicar():
     x = int(input(" Digite o primeiro número: "))
     y = int(input(" Digite o segundo número: "))
     mlt = (x * y)
-    print(" a Multiplicação desses números é: ", mlt)
+    print(x, "*", y, "=",  mlt)
 # multiplicar()
 
 
@@ -42,7 +42,7 @@ import math
 def raiz():
     x = int(input(" Digite um número: "))
     y = math.sqrt(x)
-    print(y)
+    print(" A raiz quadrada de ", x, "é ", y)
 # raiz()
 
 #d)
@@ -52,7 +52,7 @@ def potencia():
     x = int(input(" Digite um número: "))
     y = int(input(" Digite um número: "))
     z = math.pow(x,y)
-    print(Z)
+    print(x, "elevado a ", y, "é igual a ", Z)
 # potencia()
 
 #e)
@@ -84,7 +84,7 @@ def menuOperacoes():
 
 while(True):    
     menuOperacoes()
-    opcao = int(input("Escolha a opção desejada:"))
+    opcao = int(input("Escolha a opção que deseja realizar:"))
     if(opcao == 1):
         somar()
     elif(opcao == 2):
@@ -98,6 +98,6 @@ while(True):
     elif(opcao == 6):
         break
     else:
-        print(" Opção invalida")
+        print(" Opção inválida ! Por favior escoha uma opção existente ")
         
 
