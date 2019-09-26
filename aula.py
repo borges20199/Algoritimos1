@@ -1,9 +1,14 @@
-import principal
 
 
 
+def exibirMensagem(x):
+    print("valor de x: ", x)
+    if (x <= 0):
+        return 1
+    else:
+        return x * exibirMensagem(x-1)
 
-num1 = int(input(" Digite o número: "))
-num2 = int(input(" Digite o número: "))
-k = principal.maior(num1, num2)
-print("O maior número é o ", k)
+# 10 - ( 9 - ( 8 - ( 7 - ( 6 - ( 5 - ( 4 - ( 3 - ( 2 - ( 1 - ( 0 )  ) ) )  ) ) ) ) ) )
+
+
+print(exibirMensagem(5))
